@@ -594,6 +594,9 @@
                             </div>
                             <!-- Add Scrollbar -->
                             <div class="swiper-scrollbar"></div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
                         </div>
 
                         <script type="text/javascript">
@@ -607,6 +610,10 @@
                                         el: '.sh-gallery-slider-dynamic .swiper-scrollbar',
                                         hide: true,
                                     },
+									navigation: {
+										nextEl: '.swiper-button-next',
+										prevEl: '.swiper-button-prev',
+									},
                                 });
                             });
                         </script>

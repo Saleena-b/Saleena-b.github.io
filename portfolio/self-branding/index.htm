@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Colour &#8211; Saleena</title>
+    <title>Self-Branding &#8211; Saleena</title>
     <link rel='dns-prefetch' href='//saleenaanya.com'>
     <link rel='dns-prefetch' href='//fonts.googleapis.com'>
     <link rel='stylesheet' id='jevelin-settings-css' href='..\wp-content\plugins\shufflehound-showcase-framework\style.css?ver=5.3.2' type='text/css' media='all'>
@@ -140,6 +140,22 @@
             }
         </style>
     </noscript>
+  
+<script type="application/javascript">
+
+function resizeIFrameToFitContent( iFrame ) {
+
+    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+}
+
+window.addEventListener('DOMContentLoaded', function(e) {
+
+    var iFrame = document.getElementById( 'iFrame1' );
+    resizeIFrameToFitContent( iFrame );
+} );
+
+</script>
 </head>
 
 <body class="fw-portfolio-template-default single single-fw-portfolio postid-661 theme-jevelin woocommerce-no-js wpb-js-composer js-comp-ver-6.1 vc_responsive singular sh-header-mobile-spacing-compact sh-body-header-sticky carousel-dot-style3 carousel-dot-spacing-12px carousel-dot-size-small">
@@ -329,6 +345,18 @@
                                     #sh-header-builder-oCH24Fc7th i.sh-header-builder-mobile-element-icon:hover {
                                         color:
                                     }
+									
+									.video-container{
+										top: 0;
+										left: 0;
+										width: 100%;
+									}
+									
+									video{
+										width: 100%;
+										max-width: 100%;
+										height: auto;
+									}
                                 </style>
 
                                 <header id="sh-header-builder-oCH24Fc7th" class="sh-header-builder sh-header-builder-oCH24Fc7th sh-header-builder-main-spacing-standard sh-header-builder-main-nav-spacing-small sh-header-builder-main-icons-small ">
@@ -467,18 +495,26 @@
                     </style>
                 </div>
         </div>
-<br><br>
+<br>
+
 			<div id="wrapper">
 				
 
 				<div class="content-container sh-page-layout-default">
 									<div class="container entry-content">
-				
+				<div class="video-container">
+					<video autoplay loop muted>
+						<source src="saleenaanya.mp4" type="video/mp4">
+					</video>
+				</div>
+				<br>
+				<hr>
+				<br>
 				
 
 	<div class="sh-portfolio-single-container">
 
-		
+	
 				
 
 			
@@ -487,7 +523,7 @@
 						<div class="sh-portfolio-single-right col-md-8">
 
 							
-							<iframe src="saleenaanya.pdf" width="100%" style="height:75em">
+							<iframe src="saleenaanya.pdf" width="100%" style="height:75em"  id="iFrame1">
 							[Your browser does <em>not</em> support <code>iframe</code>,
 							or has been configured not to display inline frames.
 							You can access <a href="saleenaanya.pdf">the document</a>

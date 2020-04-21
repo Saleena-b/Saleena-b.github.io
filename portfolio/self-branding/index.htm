@@ -140,20 +140,6 @@
             }
         </style>
     </noscript>
-
-    <script type="application/javascript">
-        function resizeIFrameToFitContent(iFrame) {
-
-            iFrame.width = iFrame.contentWindow.document.body.scrollWidth;
-            iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-        }
-
-        window.addEventListener('DOMContentLoaded', function(e) {
-
-            var iFrame = document.getElementById('iFrame1');
-            resizeIFrameToFitContent(iFrame);
-        });
-    </script>
 </head>
 
 <body class="fw-portfolio-template-default single single-fw-portfolio postid-661 theme-jevelin woocommerce-no-js wpb-js-composer js-comp-ver-6.1 vc_responsive singular sh-header-mobile-spacing-compact sh-body-header-sticky carousel-dot-style3 carousel-dot-spacing-12px carousel-dot-size-small">
@@ -514,8 +500,68 @@
                             <div class="sh-portfolio-single row">
                                 <div class="sh-portfolio-single-right col-md-8">
 
-                                    <iframe src="saleenaanya.pdf" width="100%" style="height:65em" id="iFrame1">
-                                        [Your browser does <em>not</em> support <code>iframe</code>, or has been configured not to display inline frames. You can access <a href="saleenaanya.pdf">the document</a> via a link though.]</iframe>
+								
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <iframe src="saleenaanya.pdf" width="100%" style="height:65em" id="iFrame1">
+      Your browser does <em>not</em> support <code>iframe</code>, or has been configured not to display inline frames. You can access <a href="saleenaanya.pdf">the document</a> via a link though.</iframe>
+    </div>
+
+    <div class="item">
+     <iframe src="promotionalbooklet.pdf" width="100%" style="height:65em" id="iFrame1">
+     Your browser does <em>not</em> support <code>iframe</code>, or has been configured not to display inline frames. You can access <a href="saleenaanya.pdf">the document</a> via a link though.</iframe>
+    </div>
+
+  </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev" onclick="$('#myCarousel').carousel('prev')">
+    <span class="fa fa-chevron-left" style="
+    top: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+	font-size: 30px;
+"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next" onclick="$('#myCarousel').carousel('next')">
+    <span class="fa fa-chevron-right" style="
+    top: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+	font-size: 30px;
+"></span>
+  </a>
+</div>
+			<script>
+    $(function(){
+
+        $('.carousel-control').click(function(e){
+            e.preventDefault();
+            $('#myCarousel').carousel( $(this).data() );
+        });
+
+    });//END document.ready
+</script>					
+								
+								
+                                    
                                     <div class="sh-portfolio-single-gallery sh-portfolio-single-gallery-columns3">
                                     </div>
 
@@ -532,8 +578,7 @@
                                                         <div class="wpb_text_column wpb_content_element ">
                                                             <div class="wpb_wrapper">
                                                                 <p><span style="color: #32343d; font-size: 18px;"><strong>I am an enthusiastic, ambitious professional with a strong work ethic and
-willingness to learn. Aspiring towards a career in brand management/
-consultancy within creative arts & fashion. My skill set includes an
+willingness to learn. Aspiring towards a career in brand management/consultancy within creative arts & fashion. My skill set includes an
  excellency in PR & marketing, trend analysis, fashion editorial and
 journalism, photography, styling and Adobe Creative Suite. </strong></span></p>
 
@@ -1666,6 +1711,9 @@ journalism, photography, styling and Adobe Creative Suite. </strong></span></p>
         <script type='text/javascript' src='..\styles\js\plugins\bootstrap.min.js?ver=3.3.4'></script>
         <script type='text/javascript' src='..\wp-includes\js\wp-embed.min.js?ver=5.3.2'></script>
         <script type='text/javascript' src='..\wp-content\plugins\js_composer\assets\js\dist\js_composer_front.min.js?ver=6.1'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+		
         <script type="text/javascript">
             jQuery(document).ready(function($) {
                 "use strict";

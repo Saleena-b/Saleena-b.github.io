@@ -500,7 +500,12 @@
                             <div class="sh-portfolio-single row">
                                 <div class="sh-portfolio-single-right col-md-8">
 
-								
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	
+	
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -511,22 +516,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <iframe src="saleenaanya.pdf" width="100%" style="height:65em" id="iFrame1">
+      <iframe src="saleenaanya.pdf" width="100%" style="height:90em" id="iFrame1">
       Your browser does <em>not</em> support <code>iframe</code>, or has been configured not to display inline frames. You can access <a href="saleenaanya.pdf">the document</a> via a link though.</iframe>
     </div>
 
     <div class="item">
-     <iframe src="promotionalbooklet.pdf" width="100%" style="height:65em" id="iFrame1">
+     <iframe src="promotionalbooklet.pdf" width="100%" style="height:90em" id="iFrame2">
      Your browser does <em>not</em> support <code>iframe</code>, or has been configured not to display inline frames. You can access <a href="saleenaanya.pdf">the document</a> via a link though.</iframe>
     </div>
 
   </div>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev" onclick="$('#myCarousel').carousel('prev')">
+  <a class="left carousel-control" data-target="#myCarousel"  data-slide-to="0">
     <span class="fa fa-chevron-left" style="
     top: 50%;
     position: absolute;
@@ -537,7 +539,7 @@
 	font-size: 30px;
 "></span>
   </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next" onclick="$('#myCarousel').carousel('next')">
+  <a class="right carousel-control" data-target="#myCarousel" data-slide-to="1">
     <span class="fa fa-chevron-right" style="
     top: 50%;
     position: absolute;
@@ -548,17 +550,7 @@
 	font-size: 30px;
 "></span>
   </a>
-</div>
-			<script>
-    $(function(){
-
-        $('.carousel-control').click(function(e){
-            e.preventDefault();
-            $('#myCarousel').carousel( $(this).data() );
-        });
-
-    });//END document.ready
-</script>					
+</div>				
 								
 								
                                     

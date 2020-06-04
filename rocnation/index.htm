@@ -109,6 +109,9 @@
                 background: none !important;
                 padding: 0 !important;
             }
+			html {
+			  scroll-behavior: smooth;
+			}
         </style>
         <link rel="stylesheet" id="rocnation-google-fonts-css" href="css.css?family=Roboto+Condensed%3A300%2C400%2C400i%2C700&#038;display=swap&#038;ver=5.3.3" media="all" />
         <link rel="stylesheet" id="rocnation-style-css" href="wp-content\themes\rocnation\style.css?ver=1.5.4" media="all" />
@@ -600,30 +603,41 @@
                             class="hero__list slick-slider--slick-arrow-icons"
                             data-slick='{"arrows": true,"dots": true,"draggable": false,"fade": true,"responsive": [{"breakpoint": 720,"settings": {"draggable": true,"fade": false,"swipe": true}}],"swipe": true}'
                         >
-                            <div class="hero__item hero__item--background-image hero__item--default">
-                                <div class="hero__item-inner">
-                                    <div class="hero__content">
-                                        <div class="eyebrow">The World’s Preeminent Entertainment Company</div>
-                                        <h1 class="hero__heading heading-1">The talent scheme for creative fashion minds.</h1>
-                                    </div>
-                                </div>
-                                <div class="hero__background-image media-container media-container--cover">
-                                    <img
-                                        width="1080"
-                                        height="814"
-                                        src="wp-content\uploads\2020\01\Rapsody2.jpg"
-                                        class="media-container__media"
-                                        alt="A man singing into his microphone"
-                                        srcset="
-                                            wp-content\uploads\2020\01\Rapsody2.jpg         1080w,
-                                            wp-content\uploads\2020\01\Rapsody2-720x543.jpg  720w,
-                                            wp-content\uploads\2020\01\Rapsody2-480x362.jpg  480w,
-                                            wp-content\uploads\2020\01\Rapsody2-768x579.jpg  768w
-                                        "
-                                        sizes="(max-width: 1080px) 100vw, 1080px"
-                                    />
-                                </div>
-                            </div>
+							
+							<div class="hero__item hero__item--background-video hero__item--default" style="width: 100%; display: inline-block;">
+								<div class="hero__item-inner">
+									<div class="hero__content">
+										<div class="eyebrow">The World’s Preeminent Entertainment Company</div>
+										<h1 class="hero__heading heading-1">The talent scheme for creative fashion minds.</h1>
+										<div class="link-list">
+											<div class="link-item">
+												<a class="link" href="#careeroppourtunities">
+													<span>Learn More</span>
+													<svg class="link__icon" enable-background="new 0 0 11 8" version="1.1" viewBox="0 0 11 8" x="0px" xml:space="preserve"
+														xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+														<title>Arrow</title>
+														<line fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" x1="1" x2="10" y1="3.5" y2="3.5"></line>
+														<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" points="7,0 10,3.5 7,7"></polyline>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="hero__background-image media-container media-container--cover">
+									<img width="2560" height="1280" src="https://www.rocnation.com/wp-content/uploads/2020/01/UZI-Elevator-Stance2.1-scaled.jpg" class="media-container__media" alt="" srcset="https://www.rocnation.com/wp-content/uploads/2020/01/UZI-Elevator-Stance2.1-scaled.jpg 2560w, https://www.rocnation.com/wp-content/uploads/2020/01/UZI-Elevator-Stance2.1-720x360.jpg 720w, https://www.rocnation.com/wp-content/uploads/2020/01/UZI-Elevator-Stance2.1-1440x720.jpg 1440w, https://www.rocnation.com/wp-content/uploads/2020/01/UZI-Elevator-Stance2.1-480x240.jpg 480w, https://www.rocnation.com/wp-content/uploads/2020/01/UZI-Elevator-Stance2.1-768x384.jpg 768w, https://www.rocnation.com/wp-content/uploads/2020/01/UZI-Elevator-Stance2.1-1536x768.jpg 1536w, https://www.rocnation.com/wp-content/uploads/2020/01/UZI-Elevator-Stance2.1-2048x1024.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px">
+									</div>
+									<div class="hero__background-video media-container media-container--cover media-container--video">
+										<video autoplay="" class="media-container__media" loop="" muted="" playsinline="" src="https://player.vimeo.com/external/386840666.sd.mp4?s=98bed76b3ad21f9e7812b944f70167e6a3ac0fc6&amp;profile_id=165"></video>
+										<button aria-label="Pause video" class="action-pause-video media-container__pause-button" tabindex="0">
+											<img alt="Pause icon" class="media-container__pause-icon" src="https://www.rocnation.com/wp-content/themes/rocnation/assets/icons/pause-circle.svg">
+												<img alt="Play icon" class="media-container__play-icon" src="https://www.rocnation.com/wp-content/themes/rocnation/assets/icons/play-circle.svg">
+												</button>
+											</div>
+										</div>
+							
+							
                         </div>
                     </section>
                     <section class="section about-content">
@@ -633,7 +647,7 @@
                                 <div class="section__header-link"></div>
                             </header>
                             <div class="about-content__main">
-                                <div class="about-content__statistics">
+                                <div id="careeroppourtunities" class="about-content__statistics">
                                     <div class="about-content__statistics-list">
                                         <div class="about-content__statistics-item">
                                             <div class="about-content__statistics-item-statistic heading-1 heading-1--bold">

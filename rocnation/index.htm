@@ -669,16 +669,16 @@
                                 </div>
                                 <div class="about-content__heading heading-1">Career Opportunities</div>
                                 <div class="about-content__content" style="padding-bottom: 20px;">
-                                    <div class="about-content__content-nav tab-scroll">
-                                        <button aria-controls="about-tab" aria-selected="true" class="about-content__content-nav-button about-content__content-nav-button--active tab-scroll__item" role="tab">Design</button>
-                                        <button aria-controls="about-tab" aria-selected="false" class="about-content__content-nav-button tab-scroll__item" role="tab">Editorial</button>
-                                        <button aria-controls="about-tab" aria-selected="false" class="about-content__content-nav-button tab-scroll__item" role="tab">PR & Communications</button>
+                                    <div class="about-content__content-nav tab-scroll nav">
+                                        <button aria-controls="about-tab" aria-selected="true" href="#nav-design" class="about-content__content-nav-button about-content__content-nav-button--active tab-scroll__item nav-item nav-link active" role="tab" data-toggle="tab">Design</button>
+                                        <button aria-controls="about-tab" aria-selected="false" href="#nav-editorial" class="about-content__content-nav-button tab-scroll__item nav-item nav-link" role="tab" data-toggle="tab">Editorial</button>
+                                        <button aria-controls="about-tab" aria-selected="false" href="#nav-pr" class="about-content__content-nav-button tab-scroll__item nav-item nav-link" role="tab" data-toggle="tab">PR & Communications</button>
                                         <!--<button aria-controls="about-tab" aria-selected="false" class="about-content__content-nav-button tab-scroll__item" role="tab">Distribution</button>-->
                                     </div>
-                                    <div class="about-content__content-list tick">
+                                    <div class="about-content__content-list tick tab-content" id="nav-tabContent">
                                         <div class="about-content__content-item about-content__content-item--active">
                                             <div class="about-content__content-item-content">
-                                                <div class="about-content__content-item-text paragraph">
+                                                <div class="about-content__content-item-text paragraph tab-pane fade show active" id="nav-design" role="tabpanel">
                                                     <p>
                                                         Here at Roc Nation, we are looking to welcome exceptional talent through our FC-Z programme to join our
 														design department. Our team are centred on driving the brand forward through determination and high
@@ -740,7 +740,7 @@
                                         </div>
                                         <div class="about-content__content-item">
                                             <div class="about-content__content-item-content">
-                                                <div class="about-content__content-item-text paragraph">
+                                                <div class="about-content__content-item-text paragraph tab-pane fade" id="nav-editorial" role="tabpanel">
                                                     <p>
                                                         Paper Planes, a brand built on the convergence of streetwear and high fashion, materialised through
 														mediums of art as a visual language. Our brand promotional material is structured immaculately across our media
@@ -802,7 +802,7 @@
                                         </div>
                                         <div class="about-content__content-item">
                                             <div class="about-content__content-item-content">
-                                                <div class="about-content__content-item-text paragraph">
+                                                <div class="about-content__content-item-text paragraph tab-pane fade" id="nav-pr" role="tabpanel">
                                                     <p>
                                                         Roc Nation has an outstanding media image, with music mogul Shawn “JAY Z” Carter as the head of the
 														company, with an impeccable execution of events alongside a 1.5 billion audience outreach to match. We are

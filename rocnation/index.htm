@@ -628,7 +628,12 @@
 									<img width="2560" height="1280" src="images/roc_signs.jpg" class="media-container__media" alt="" >
 									</div>
 									<div class="hero__background-video media-container media-container--cover media-container--video">
-										<video autoplay class="media-container__media" type='video/mp4' loop muted playsinline src="images/fcz-video.mp4"></video>
+										<!--<video autoplay class="media-container__media" type='video/mp4' loop muted playsinline src="images/fcz-video.mp4"></video>-->
+										<video class="media-container__media" autoplay loop muted playsinline poster="video_thumbnail/thumbanil.jpg" src="images/fcz-video.mp4">
+												<source src="video/video.mp4" type="video/mp4"></source>
+												<source src="video/video.webm" type="video/webm"></source>
+												<source src="video/video.mov" type="video/mov"></source>
+										</video>
 										<button aria-label="Pause video" class="action-pause-video media-container__pause-button" tabindex="0">
 											<img alt="Pause icon" class="media-container__pause-icon" src="https://www.rocnation.com/wp-content/themes/rocnation/assets/icons/pause-circle.svg">
 												<img alt="Play icon" class="media-container__play-icon" src="https://www.rocnation.com/wp-content/themes/rocnation/assets/icons/play-circle.svg">

@@ -61,6 +61,13 @@
             $(document).ready(function () {
                  $("#myModal").modal("show");
             }); 
+			
+			$('#modal1').on('shown.bs.modal', function () {
+			  $('#video1')[0].play();
+			})
+			$('#modal1').on('hidden.bs.modal', function () {
+			  $('#video1')[0].pause();
+			})
         </script>
         <style>
             img.wp-smiley,
@@ -590,9 +597,7 @@
 									<div class="hero__background-video media-container media-container--cover media-container--video">
 										<!--<video autoplay class="media-container__media" type='video/mp4' loop muted playsinline src="images/fcz-video.mp4"></video>-->
 										<video class="media-container__media" autoplay loop muted playsinline poster="video_thumbnail/thumbanil.jpg" src="images/fcz-video.mp4">
-												<source src="video/video.mp4" type="video/mp4"></source>
-												<source src="video/video.webm" type="video/webm"></source>
-												<source src="video/video.mov" type="video/mov"></source>
+												<source src="images/fcz-video.mp4"type="video/mp4"></source>
 										</video>
 										<button aria-label="Pause video" class="action-pause-video media-container__pause-button" tabindex="0">
 											<img alt="Pause icon" class="media-container__pause-icon" src="https://www.rocnation.com/wp-content/themes/rocnation/assets/icons/pause-circle.svg">
@@ -674,6 +679,26 @@
                                                     <div class="link-item">
                                                         <a class="link" href="fmpZINE-SALEENAANYA-FA6006.pdf">
                                                             <span>Inspirational Zine</span>
+                                                            <svg
+                                                                class="link__icon"
+                                                                enable-background="new 0 0 11 8"
+                                                                version="1.1"
+                                                                viewbox="0 0 11 8"
+                                                                x="0px"
+                                                                xml:space="preserve"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                y="0px"
+                                                            >
+                                                                <title>Arrow</title>
+                                                                <line fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" x1="1" x2="10" y1="3.5" y2="3.5"></line>
+                                                                <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" points="7,0 10,3.5 7,7"></polyline>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+													 <div class="link-item">
+                                                        <a class="link" data-toggle="modal" data-target="#modal1" href="FMP-SALEENAANYA-FA6006-VIDEO-FCZ.mp4">
+                                                            <span>View Video</span>
                                                             <svg
                                                                 class="link__icon"
                                                                 enable-background="new 0 0 11 8"
@@ -1249,6 +1274,31 @@
                         </div>
                     </div>
                 </div>
+				 <!--Modal: Video -->
+					<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-lg" role="document">
+
+						<!--Content-->
+						<div class="modal-content">
+
+						  <!--Body-->
+						  <div class="modal-body mb-0 p-0">
+
+							<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+							  <video class="embed-responsive-item" id="video1" src="FMP-SALEENAANYA-FA6006-VIDEO-FCZ.mp4" controls allowfullscreen>
+								<source src="FMP-SALEENAANYA-FA6006-VIDEO-FCZ.mp4" type="video/mp4"></source>
+								Your browser doesn't support HTML5 video tag.
+								</video>
+							</div>
+
+						  </div>
+
+						</div>
+						<!--/.Content-->
+
+					  </div>
+					</div>
+					<!--Modal: Name-->
             </footer>
         </div>
         <script src="wp-content\themes\rocnation\assets\scripts\main.bundle.js?ver=1.5.4" type="112c48414462e83b32ea4933-text/javascript"></script>

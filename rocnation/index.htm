@@ -60,14 +60,15 @@
         <script>
             $(document).ready(function () {
                  $("#myModal").modal("show");
-            }); 
-			
+				 
+				 
 			$('#modal1').on('shown.bs.modal', function () {
 			  $('#video1')[0].play();
 			})
 			$('#modal1').on('hidden.bs.modal', function () {
 			  $('#video1')[0].pause();
 			})
+            }); 
         </script>
         <style>
             img.wp-smiley,
@@ -697,7 +698,7 @@
                                                         </a>
                                                     </div>
 													 <div class="link-item">
-                                                        <a class="link" data-toggle="modal" data-target="#modal1" href="FMP-SALEENAANYA-FA6006-VIDEO-FCZ.mp4">
+                                                        <a class="link" data-toggle="modal" data-target="#modal1">
                                                             <span>View Video</span>
                                                             <svg
                                                                 class="link__icon"
@@ -1275,7 +1276,7 @@
                     </div>
                 </div>
 				 <!--Modal: Video -->
-					<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal fade modal1" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					  <div class="modal-dialog modal-lg" role="document">
 
 						<!--Content-->
@@ -1285,7 +1286,7 @@
 						  <div class="modal-body mb-0 p-0">
 
 							<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-							  <video class="embed-responsive-item" id="video1" src="FMP-SALEENAANYA-FA6006-VIDEO-FCZ.mp4" controls allowfullscreen>
+							  <video class="embed-responsive-item" autoplay id="video1" src="FMP-SALEENAANYA-FA6006-VIDEO-FCZ.mp4" controls allowfullscreen>
 								<source src="FMP-SALEENAANYA-FA6006-VIDEO-FCZ.mp4" type="video/mp4"></source>
 								Your browser doesn't support HTML5 video tag.
 								</video>
